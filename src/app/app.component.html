@@ -1,0 +1,14 @@
+  <h1>{{ title | uppercase}}</h1>
+  <div class="container">
+    <div class="input-container">
+      <input type="number" name="number1" placeholder="Enter a number" [(ngModel)]="number1">
+      <input type="number" name="number2" placeholder="Enter a number" [(ngModel)]="number2">
+    </div>
+    <div class="button-container">
+      <button (click)="add()">+</button>
+      <button (click)="substract()">-</button>
+      <button (click)="multiply()">*</button>
+      <button (click)="divide()">/</button>
+    </div>
+    <h2>{{ result | uppercase }} = {{ outcome }}</h2>
+  </div>
